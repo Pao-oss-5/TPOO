@@ -1,12 +1,11 @@
-import consultas.Consultas;
+package hospital;
+
 import consultorios.Consultorio;
-import hospital.Hospital;
 import medicos.Medico;
 import pacientes.Paciente;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
