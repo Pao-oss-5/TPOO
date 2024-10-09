@@ -10,14 +10,17 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Random;
 public class Hospital {
+
     Random random = new Random();
     LocalDate fecha = LocalDate.now();
     public ArrayList<Paciente> listaPacientes = new ArrayList<>();
     public ArrayList<Medico> listaMedicos = new ArrayList<>();
     public ArrayList<Consulta> listaConsultas = new ArrayList<>();
     public ArrayList<Consultorio> listaConsultorios = new ArrayList<>();
-    private ValidadorHospital validador = new ValidadorHospital();
-    //    metodos
+    private ValidadorHospital validador = new ValidadorHospital(); {
+
+    }
+    //metodos
     public void registrarPaciente(Paciente paciente) {
         this.listaPacientes.add(paciente);
     }
@@ -27,7 +30,7 @@ public class Hospital {
     public boolean registrarConsulta(Consulta consulta) {
         // paciente no tenga consulta en esa fecha
         if(!validador.validarDispolnibilidadEnFechaConsulta(consulta.getFechaHora(),consulta.getConsultorio().getNumeroConsultorio(), this.listaConsultas)){
-            System.out.println("Ya existe una consulta registrada par esa fecha");
+            System.out.println("Ya existe una consulta registrada para esa fecha");
             return false;
         }
         if(!validador.validarDisponibilidadMedico(consulta.getFechaHora(),consulta.getMedico().getId(),this.listaConsultas)){
@@ -168,5 +171,6 @@ public class Hospital {
             }
         }
         return true;
+
     }
 }

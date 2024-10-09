@@ -27,7 +27,7 @@ public class Menu {
             String usuario = sc.next();
 
             System.out.println("Ingresa tu contrasenia");
-            String contrasenia = sc.next();
+            String contrasenia = sc.nextLine();
 
             if (usuario.equals(this.USUARIO_PACIENTE)){
                 if(contrasenia.equals(CONTRASENIA_PACIENTE)){
