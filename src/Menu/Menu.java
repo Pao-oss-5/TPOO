@@ -65,6 +65,7 @@ public class Menu {
             System.out.println("** Sistema Hospital **");
             System.out.println("Bienvenido Paciente");
             System.out.println("1. Ver mis consultas");
+            System.out.println("2. ");
             System.out.println("2. Salir");
 
             System.out.println("Selecciona una opcion:");
