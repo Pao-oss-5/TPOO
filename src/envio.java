@@ -1,21 +1,25 @@
-public abstract class envio {
+public abstract class Envio {
 
     double costoBase;
     double peso;
 
     //constructor
 
-    public envio(double costoBase) {
+    public Envio(double costoBase)
+    {
         this.costoBase = costoBase;
     }
-    public envio(double peso) {
+    public Envio(double peso) {
+
         this.peso = peso;
     }
     //getters
     public double getCostoBase() {
+
         return costoBase;
     }
     public double getPeso() {
+
         return peso;
     }
 
