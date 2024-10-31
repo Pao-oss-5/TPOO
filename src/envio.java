@@ -1,33 +1,19 @@
-public abstract class Envio {
+public abstract class envio {
+        double costoBase;
+        double peso;
 
-    double costoBase;
-    double peso;
+        public envio(double costoBase, double peso) {
+            this.costoBase = costoBase;
+            this.peso = peso;
+        }
 
-    //constructor
+        public abstract void calcularTiempoYCostoEntrega();
 
-    public Envio(double costoBase)
-    {
-        this.costoBase = costoBase;
+        public void validarPeso(double peso) {
+            if (peso < 0){
+                System.out.println("Peso invalido");
+            } else {
+                System.out.println("Peso: " + peso);
+            }
+        }
     }
-    public Envio(double peso) {
-
-        this.peso = peso;
-    }
-    //getters
-    public double getCostoBase() {
-
-        return costoBase;
-    }
-    public double getPeso() {
-
-        return peso;
-    }
-
-    //setters
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-    public void setCosto(double costo) {
-
-    }
-}
