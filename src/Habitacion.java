@@ -11,8 +11,8 @@ public class Habitacion {
 //getters
 
     public double getPrecioPorNoche() {
-        System.out.println(precioPorNoche);
-        return 0;
+        System.out.println("Total a pagar: " + precioPorNoche );
+        return precioPorNoche;
     }
 
     public void reservar(int noches) throws Exceptiones.HabitacionNoDisponibleException, Exceptiones.NumeroDeNochesInvalidoException {
@@ -32,16 +32,17 @@ public class Habitacion {
     }
 
     public void mostrarDetalles() {
-        System.out.println("Tipo: " + tipo);
+        System.out.println("Tipo de habitacion: " + tipo);
         System.out.println("Precio por Noche: $" + precioPorNoche);
         System.out.println("Disponible: " + (disponible ? "Sí" : "No"));
     }
 
     public void toString(int noches) {
+
         System.out.println("Noches: " + noches);
     }
 
-    public static Habitacion get(int indice) {
+    public static void get(int indice) {
         System.out.println("Indice: " + indice);
     }
 }
