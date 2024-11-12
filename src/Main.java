@@ -19,7 +19,7 @@ public class Main {
                 Habitacion habitacion = habitaciones.get(i);
                 System.out.println("Índice: " + i);
                 habitacion.mostrarDetalles();
-                System.out.println("----------------------");
+                System.out.println("\n");
             }
         }
 
