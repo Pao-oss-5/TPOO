@@ -11,7 +11,7 @@ public class Habitacion {
 //getters
 
     public double getPrecioPorNoche() {
-        System.out.println("Total a pagar: " + precioPorNoche );
+        System.out.println("Precio por noche: " + precioPorNoche );
         return precioPorNoche;
     }
 
